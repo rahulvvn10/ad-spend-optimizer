@@ -1,0 +1,59 @@
+:root {
+  --bg-main: #0f172a;
+  --bg-card: #111827;
+  --bg-elevated: #1f2933;
+
+  --text-primary: #e5e7eb;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+
+  --accent: #38bdf8;
+  --accent-soft: #0ea5e9;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 32px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+button {
+  background: var(--accent);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: var(--accent-soft);
+}
+.card {
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.metric {
+  transition: all 0.3s ease;
+}
